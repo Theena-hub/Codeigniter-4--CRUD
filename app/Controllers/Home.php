@@ -49,7 +49,7 @@ class Home extends BaseController
         $model = new CommonModel;
         $id = $this->request->getPost('id');        
         $model->deleteValue(["id" => $id]);
-        echo json_encode(["status" => "Success", "data" => "Data Deleted Successfully"]);
+        echo json_encode(["status" => "Success", "data" => "Data Successfully Deleted"]);
     }
     public function getDataById()
     {
